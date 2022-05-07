@@ -1,0 +1,65 @@
+#table {
+	width: 600px;
+	height: auto;
+    color: aliceblue;
+    background-color: rgb(48, 47, 47);
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.row {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #ffffff;
+}
+.row-title {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 40px;
+    color: rgb(111, 202, 146);
+}
+.name {
+	position: relative;
+	display: inline-block;
+	width: 75%;
+	line-height: 45px;
+}
+#score-id {
+    color: rgb(111, 202, 146);
+}
+.row-title {
+	position: relative;
+	display: inline-block;
+	width: 75%;
+	line-height: 45px;
+}
+.score {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+}
+#text-leaderboard {
+    color: lightskyblue;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.back-leaderboard {
+    text-decoration: none;
+    color: rgb(224, 109, 77);
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+.back-leaderboard:hover {
+    color: whitesmoke;
+    transform: scale(1.025);
+}
+.leaderboard-title {
+    font-size: 4rem;
+    margin-top: -15rem;
+    margin-bottom: 1rem;
+}

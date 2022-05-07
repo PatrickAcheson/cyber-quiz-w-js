@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Patrick Acheson-->
+<html>
+    <html lang='en'>
+    <head>
+        <title> Quiz Game 1.0 </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link href="styles.css" rel="stylesheet">
+        <link href="complete.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div id="leaderboard" class="flex-column flex-center">
+                <h1 class="title">Enter your name to save your score</h1>
+                <div class="table">
+                    <form>
+                        <label if="user-text">Username:</label>
+                        <br>
+                        <input type="text" id="username" name="username" placeholder="username">
+                        <button type="button" onclick="window.location.href='/leaderboard.html'" class="save-btn">Save</button> <!-- fuction is broken needs fixed :  id="savebtn" type="submit" onclick="saveHighScore(event)"-->
+                    </form>
+                </div>
+                <a href="/index.html" class="back-leaderboard">Back</a>
+            </div>
+        </div>
+        <p class="footer">created by bng (mini project)</p>
+        <script src="complete.js"></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+body {
+    background-color: rgb(27, 27, 26)
+}
+.hud-item {
+    align-content: right;
+}
+.btn-answer {
+    font-size: 1.5rem;
+    padding: 2rem;
+    width: 15rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(43, 43, 43);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.btn-answer:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.select-container {
+    font-size: 1.5rem;
+    padding: 1.2rem 0;
+    width: 15rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    background: whitesmoke;
+    border-radius: 15px;
+}
+.select-container:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background-color: rgb(218, 215, 86);
+}
+.back {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(224, 109, 77);
+    margin-bottom: 1rem;
+}
+#question {
+    color: lightskyblue;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.correct {
+    background: rgb(83, 173, 83);
+    color: black;
+}
+.wrong {
+    background: rgb(172, 49, 49);
+    color: aliceblue;
+}
+.hud-prefix {
+    text-align: right;
+    font-size: 1.5rem;
+    color: rgb(224, 109, 77);
+}
+.hud-main-text {
+    text-align: right;
+    font-size: 1.5rem;
+}
+.flex-right {
+    align-items: right;
+    padding-right: 20rem;
+    margin-top: 5rem;
+}
+.play-quiz-title {
+    font-size: 5rem;
+    margin-top: -22rem;
+    margin-bottom: 1.1rem;
+
+}
+@media screen and (max-width: 1800px) {
+    .flex-right {
+        align-items: right;
+        padding-right:0.5rem;
+        margin-top: 0.4rem;
+    }
+    .flex-column {
+        margin-top: 17rem;
+    }
+}

@@ -1,0 +1,50 @@
+.table {
+	width: 600px;
+	height: auto;
+    color: aliceblue;
+    background-color: rgb(48, 47, 47);
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.score-id {
+    color: rgb(111, 202, 146);
+}
+.row-title {
+	position: relative;
+	display: inline-block;
+	width: 75%;
+	line-height: 45px;
+}
+.back-leaderboard {
+    text-decoration: none;
+    color: rgb(224, 109, 77);
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+.back-leaderboard:hover {
+    color: whitesmoke;
+    transform: scale(1.025);
+}
+.title {
+    font-size: 2rem;
+    margin-top: -15rem;
+    margin-bottom: 1rem;
+}
+.save-btn {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(27, 27, 26);
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    height: 2.31rem;
+    width: 4rem;
+}
+.save-btn:hover {
+    transform: scale(1.025);
+}
