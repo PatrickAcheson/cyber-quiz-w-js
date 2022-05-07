@@ -348,7 +348,7 @@ const question = [
         question: 'What is the data unit used in OSI model network layer?',
         answers: [
             {text: 'data', correct: false},
-            {text: 'segment', correct: false},
+            {text: 'packet', correct: true},
             {text: 'bit', correct: false},
             {text: 'frame', correct: false},
         ]
