@@ -40,7 +40,7 @@ function showQuestions(question) {
         console.log("running") 
     } else {
         newScore = score
-        location.href = '/complete.html';
+        location.href = '/cyber-quiz-w-js/complete.html';
     }
 }
 
