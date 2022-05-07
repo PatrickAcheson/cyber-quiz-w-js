@@ -12,6 +12,7 @@ After the initial design, I used Javascipt to create browser side quiz script th
 I attempted to create a leaderboard system that saved the final score into a JSON client side file and used that to update the leaderboard. This is currently broken and I will attempt to make it work properly in future commits.
 
 **# Known Issues & bugs**
-**- score counter scipts counts before adding
+**
+- score counter scipts counts before adding
 - leaderboard has issues and will not display from JSON file
 - spelling errors in a few qustions**
