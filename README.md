@@ -5,7 +5,7 @@ A quiz I created with knowledge gaining from a CSS, HTML and JS course.
 **07/05/2022**
 
 **# Functionality**
-I had been working through a full-stack course on Udemy, due to the course being partly outdated I onyl went as far as front end development. I haved my basic/intermediate skills in CSS, HTML to create it.
+I had been working through a full-stack course on Udemy, due to the course being partly outdated I only learned as far as front end development. I used my basic/intermediate skills in CSS, HTML to create it, although i aim to expand into backend at some point.
 
 After the initial design, I used Javascipt to create browser side quiz script that pulls questions from a array.
 
