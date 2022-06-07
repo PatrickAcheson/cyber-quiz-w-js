@@ -428,8 +428,8 @@ const question = [
     {
         question: 'What is stage 3 of a pen-test?',
         answers: [
-            {text: 'exploitation', correct: true},
-            {text: 'gaining access', correct: false},
+            {text: 'exploitation', correct: false},
+            {text: 'gaining access', correct: true},
             {text: 'reconnaissance', correct: false},
             {text: 'scanning', correct: false},
         ]
@@ -444,12 +444,12 @@ const question = [
         ]
     },
     {
-        question: 'What is stage 5 of a pen-test?',
+        question: 'What is the 5th stage of a pen-test?',
         answers: [
             {text: 'scanning', correct: false},
             {text: 'gaining access', correct: false},
             {text: 'maintaining access', correct: false},
-            {text: 'reporting & analysis', correct: true},
+            {text: 'covering tracks', correct: true},
         ]
     },
     {
@@ -461,5 +461,96 @@ const question = [
             {text: 'access control list', correct: true},
         ]
     },
+    {
+        question: 'When a packet does not meet ACL criteria it is?',
+        answers: [
+            {text: 'resent', correct: false},
+            {text: 'dropped', correct: true},
+            {text: 'destroyed', correct: false},
+            {text: 'ACK send', correct: false},
+        ]
+    },
+    {
+        question: 'How many HOSTS per subnet in a /18 network?',
+        answers: [
+            {text: '4,096', correct: false},
+            {text: '16,384', correct: true},
+            {text: '32,768', correct: false},
+            {text: '16,382', correct: false},
+        ]
+    },
+    {
+        question: 'What protocal in connection-less?',
+        answers: [
+            {text: 'FTP', correct: false},
+            {text: 'TCP', correct: false},
+            {text: 'IP', correct: true},
+            {text: 'HTTPS', correct: false},
+        ]
+    },
+    {
+        question: 'Name the 1st stage of the forensic investigation process',
+        answers: [
+            {text: 'identifcation', correct: false},
+            {text: 'evaluation', correct: false},
+            {text: 'acquisition', correct: true},
+            {text: 'presentation', correct: false},
+        ]
+    },
+    {
+        question: 'Name the 2nd stage of the forensic investigation process',
+        answers: [
+            {text: 'identifcation', correct: true},
+            {text: 'evaluation', correct: false},
+            {text: 'presentation', correct: false},
+            {text: 'covering tracks', correct: false},
+        ]
+    },
+    {
+        question: 'Name the 3rd stage of the forensic investigation process',
+        answers: [
+            {text: 'analysis', correct: false},
+            {text: 'evaluation', correct: true},
+            {text: 'presentation', correct: false},
+            {text: 'reporting', correct: false},
+        ]
+    },
+    {
+        question: 'Name the 4th stage of the forensic investigation process',
+        answers: [
+            {text: 'reconnisance', correct: false},
+            {text: 'locating', correct: false},
+            {text: 'presentation', correct: true},
+            {text: 'evaluation', correct: false},
+        ]
+    },
+    {
+        question: 'What does ACPO stand for in forensics terminology',
+        answers: [
+            {text: 'association of chief police officers', correct: true},
+            {text: 'association of criminal police organisations', correct: false},
+            {text: 'analysis of connected potential offenders', correct: false},
+            {text: 'acquisition of Object-oriented programming', correct: false},
+        ]
+    },
+    {
+        question: 'What does NOT describe chain of custody',
+        answers: [
+            {text: 'how the evidence was collected', correct: false},
+            {text: 'where the evidence was stored', correct: false},
+            {text: 'who might be the lead suspect', correct: true},
+            {text: 'who has had access to the evidence', correct: false},
+        ]
+    },
+    {
+        question: '_____ acquisition is copied from a device without the assistance of OS',
+        answers: [
+            {text: 'live data', correct: false},
+            {text: 'static', correct: true},
+            {text: 'physical', correct: false},
+            {text: 'partical', correct: false},
+        ]
+    },
+    
     
 ]
