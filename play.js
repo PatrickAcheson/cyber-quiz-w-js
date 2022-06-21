@@ -462,7 +462,7 @@ const question = [
         ]
     },
     {
-        question: 'When a packet does not meet ACL criteria it is?',
+        question: 'When a packet does not meet a ACL criteria it is?',
         answers: [
             {text: 'resent', correct: false},
             {text: 'dropped', correct: true},
@@ -480,7 +480,7 @@ const question = [
         ]
     },
     {
-        question: 'What protocal in connection-less?',
+        question: 'What protocal is connection-less?',
         answers: [
             {text: 'FTP', correct: false},
             {text: 'TCP', correct: false},
@@ -542,15 +542,4 @@ const question = [
             {text: 'who has had access to the evidence', correct: false},
         ]
     },
-    {
-        question: '_____ acquisition is copied from a device without the assistance of OS',
-        answers: [
-            {text: 'live data', correct: false},
-            {text: 'static', correct: true},
-            {text: 'physical', correct: false},
-            {text: 'partical', correct: false},
-        ]
-    },
-    
-    
 ]
