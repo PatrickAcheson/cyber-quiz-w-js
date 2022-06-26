@@ -23,21 +23,6 @@ body {
     transform: scale(1.02);
     box-shadow: 0 0 10px rgb(255, 255, 255);
 }
-.select-container {
-    font-size: 1.5rem;
-    padding: 1.2rem 0;
-    width: 15rem;
-    margin-bottom: 1.2rem;
-    text-align: center;
-    background: whitesmoke;
-    border-radius: 15px;
-}
-.select-container:hover {
-    cursor: pointer;
-    transform: scale(1.025);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    background-color: rgb(218, 215, 86);
-}
 .back {
     text-align: center;
     text-decoration: none;
@@ -84,6 +69,6 @@ body {
         margin-top: 0.4rem;
     }
     .flex-column {
-        margin-top: 17rem;
+        margin-top: 0rem;
     }
 }
