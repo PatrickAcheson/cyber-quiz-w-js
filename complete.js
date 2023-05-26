@@ -1,30 +1,31 @@
-const username = document.querySelector('#username')
-const savebtn = document.querySelector('#save-btn')
-const score = localStorage.getItem('newScore') || 0 // Get score from localStorage
+const username = document.querySelector('#username');
+const saveBtn = document.querySelector('.save-btn');
+const finalScore = localStorage.getItem('newScore') || 0;
 
-const highScores = JSON.parse(localStorage.getItem('highScores')) || []
+let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 username.addEventListener('keyup', () => {
-    savebtn.disabled = !username.value
-})
+    saveBtn.disabled = !username.value;
+});
 
-saveHighScore = e => {
-    e.preventDefault()
+saveHighScore = (e) => {
+    e.preventDefault();
 
     const score = {
-        score: score,
-        name: username.value
-    }
+        score: finalScore,
+        name: username.value,
+    };
 
-    highScores.push(score)
+    highScores.push(score);
 
-    highScores.sort((a,b) => {
-        return b.score - a.score
-    })
-    highScores.splice(5) // Keep top 5 scores
+    highScores.sort((a, b) => {
+        return b.score - a.score;
+    });
 
-    localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('/cyber-quiz-w-js/leaderboard.html')
-}
+    highScores.splice(5); // Keep top 5 scores
 
-savebtn.addEventListener('click', saveHighScore)
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    window.location.href = '/cyber-quiz-w-js/leaderboard.html';
+};
+
+saveBtn.addEventListener('click', saveHighScore);
