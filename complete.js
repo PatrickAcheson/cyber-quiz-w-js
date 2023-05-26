@@ -1,13 +1,8 @@
 const username = document.querySelector('#username')
 const savebtn = document.querySelector('#save-btn')
-const score = document.querySelector('#score')
-const newScore = document.querySelector('#newScore')
+const score = localStorage.getItem('newScore') || 0 // Get score from localStorage
 
-const highScore = JSON.parse(localStorage.getItem('highScores')) || []
-
-const MAX_SCORE = 35
-
-score.innertext = newScore
+const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
 username.addEventListener('keyup', () => {
     savebtn.disabled = !username.value
@@ -15,20 +10,21 @@ username.addEventListener('keyup', () => {
 
 saveHighScore = e => {
     e.preventDefault()
-    console.log(username)
+
     const score = {
-        score: newScore,
+        score: score,
         name: username.value
     }
 
-    highScore.push(score)
+    highScores.push(score)
 
-    highScore.sort((a,b) => {
+    highScores.sort((a,b) => {
         return b.score - a.score
     })
-}
-highScore.splice(5)
+    highScores.splice(5) // Keep top 5 scores
 
-localStorage.setItem('highScores', JSON.stringify(highScore))
-console.log(highScore)
-window.location.assign('/')
+    localStorage.setItem('highScores', JSON.stringify(highScores))
+    window.location.assign('/cyber-quiz-w-js/leaderboard.html')
+}
+
+savebtn.addEventListener('click', saveHighScore)
