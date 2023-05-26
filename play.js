@@ -35,7 +35,7 @@ function showQuestions(question) {
         button.addEventListener('click', selectAnswer)
         answersButtonsElement.appendChild(button)
     })
-    if (shuffledQuestions.length <= currentQuestionIndex + 1) {
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
         localStorage.setItem('newScore', score);
     } else {
         newScore = score
